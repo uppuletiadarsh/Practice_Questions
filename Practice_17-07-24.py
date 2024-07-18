@@ -202,7 +202,7 @@ else:
     print("Not a Anagram")
 
 # removing repeated characters from string----------------------------------------------------------------
-a ='Write a function to sort a list of integers in ascending order.'
+a ='removing repeated characters from string.'
 new = ''
 for i in a:
     if i not in new:
