@@ -201,7 +201,13 @@ if e == f  :
 else:
     print("Not a Anagram")
 
-
+# removing repeated characters from string----------------------------------------------------------------
+a ='Write a function to sort a list of integers in ascending order.'
+new = ''
+for i in a:
+    if i not in new:
+        new = new+i
+print(new)
 
 
 
