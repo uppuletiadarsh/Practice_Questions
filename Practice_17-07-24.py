@@ -94,12 +94,12 @@ else:
 # line 45 Python program to replace the string space with a given character.-------------------------------
 string = "Python program to replace the string space with a given character."
 chr = input("Enter a string to Replace In the place Of Space :")
-new = []
+new = ''
 for i in string:
     if i == ' ':
-        new.append(chr)
+        new = new +chr
     else:
-        new.append(i)
+        new = new +i
 res = ''.join(new)
 print(res)
 
