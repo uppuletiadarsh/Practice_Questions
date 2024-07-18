@@ -201,13 +201,6 @@ if e == f  :
 else:
     print("Not a Anagram")
 
-# removing repeated characters from string----------------------------------------------------------------
-a ='removing repeated characters from string'
-new = ''
-for i in a:
-    if i not in new:
-        new = new+i
-print(new)
 
 
 
