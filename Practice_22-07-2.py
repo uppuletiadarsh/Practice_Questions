@@ -131,7 +131,7 @@ hf = lst[ind]
 print("The High Frequency number is :",hf)
           
      
-#  line - 86 Python program to reverse an list in two ways ?
+#  line - 86  Python program to reverse an list in two ways ?
 lst = [100,50,200,400,50,100,50]
 # slicing
 rev1 = lst[::-1]
