@@ -35,18 +35,26 @@ print(dic)
 
 # Write a python program to create a dictionary from the string ?
 
-dic = {}
-st = "Adarsh"
+st = 'Ad1%'
 key = ''
 value = ''
-for i in st:
+dic ={}
+for i in st :
     if i.islower():
         key = i
-        value = 'it is lower'
+        value="it is lower "
+        dic[key]=value
+    elif i.isdigit():
+        key = i
+        value="it is digi "
+        dic[key]=value
+    elif i.isupper():
+        key = i
+        value="it is Upper "
         dic[key]=value
     else:
         key = i
-        value = 'it is upper'
+        value="it is Special Char "
         dic[key]=value
 print(dic)
 
@@ -57,18 +65,23 @@ d1.update(d2)
 print(d1)
 
 # Write  a python program to sort dictionary by keys or values ?
-# m -1
-d1 = {'b':'one','a':'two'}
-res =sorted(d1.items())
-print(res)
-# m - 2
-d1 = {'b':'one','a':'two'}
-res =sorted(d1.keys())
-print(res)
+#m -1
+a = {'b':10,'a':20,'d':30,'c':40}
+new = {}
+re = sorted(a.items())
+print(re)
+
+#m - 2
+bc = sorted(a.keys())
+for i in bc :
+    key = i
+    value = a[i]
+    new[key]=value
+print(new)
+
 # m - 3
-d1 = {'b':2,'a':1}
-res =sorted(d1.values())
-print(res)
+cd = sorted(a.values())
+print(cd)
 
 #Write a Python program to create a dictionary from a string.  Note: Track the count of the letters from the string.
 #Sample string : 'w3resource'
@@ -98,3 +111,5 @@ for i in key1:
         sum = d1[i]+d2[i]
         new[i]=sum
 print(new)
+
+
