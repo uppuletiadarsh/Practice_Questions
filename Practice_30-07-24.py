@@ -33,7 +33,7 @@ for i in range(1,16):
     dic[key]=value
 print(dic)
 
-# Write a python program to create a dictionary from the string ?
+## Write a python program to create a dictionary from the string ?
 
 st = 'Ad1%'
 key = ''
