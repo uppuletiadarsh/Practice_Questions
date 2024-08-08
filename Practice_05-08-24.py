@@ -16,6 +16,7 @@ for i in range(10):
 
 # math module
 
+# square root
 import math
 a = math.sqrt(16)
 print(a)  
@@ -52,7 +53,7 @@ print(dt)
 today = datetime.date.today()
 print(today)  
 
-#calender module
+# calender module
 import calendar
 cal = calendar.month(2024,8)
 print(cal)

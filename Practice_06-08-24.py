@@ -22,7 +22,7 @@ print(add(10,20))
 cond = lambda x,y: x if x>y else y
 print(cond(300,200))
 
-# iteration 
+# iterations
 # map()
 l = [1,2,3,4,5,6,7]
 def add(x):
