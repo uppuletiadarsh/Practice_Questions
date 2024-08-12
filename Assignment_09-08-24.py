@@ -182,7 +182,7 @@ def compare(x):
 compare(string)
 
 
-# 10. Write a function that capitalizes the first and fourth letters of a name
+## 10. Write a function that capitalizes the first and fourth letters of a name
 def Capital_first4(x):
     New_name = ''
     if x == ' ' or x =='' :
