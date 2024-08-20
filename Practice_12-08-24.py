@@ -125,16 +125,16 @@ class Calculator:
     def mul(a, b):
         return a * b
 calc = Calculator()
-print(calc.sum1(10, 20))
-print(calc.sub(30, 10))
-print(calc.mul(5, 6))
+calc.sum1(10, 20)
+calc.sub(30, 10)
+calc.mul(5, 6)
 
 class Bike:
     @staticmethod
     def rate():
         print(200000)  
 b = Bike()
-print(b.rate())
+b.rate()
 
 
 class Building:
@@ -145,5 +145,5 @@ class Building:
     def rooms():
         print(5)
 b = Building()
-print(b.floors())
-print(b.rooms())
+b.floors()
+b.rooms()
