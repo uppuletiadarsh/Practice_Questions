@@ -146,7 +146,7 @@ class Employee:
         print(self._id)           
     def salary(self):
         print(self.__salary)    
-e= Employee("Alice",101,50000)
+e= Employee("Adarsh",169,30000)
 print(e.name)     
 print(e._id)      
 e.Name()  
