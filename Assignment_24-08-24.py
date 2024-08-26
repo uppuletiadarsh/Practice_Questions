@@ -19,12 +19,12 @@ class Cart:
     
 c = Cart()
 while True:
-    print('Choose the Options Below ')
+    print('Choose the Options Below')
     print('--------------------------------')
-    print('1. Add item')
-    print('2. Remove item')
-    print('3. total price')
-    print('4. Exit')
+    print('1. Entr 1 To Add item')
+    print('2. Enter 2 To Remove item')
+    print('3. Enter 3 For total price')
+    print('4. Enter 4 To Exit The Cart')
 
     o = input('Enter your option : ')
     if o == '1':
@@ -91,11 +91,11 @@ b = Bank()
 while True:
     print('Choose The Below Options')
     print('---------------------------------')
-    print('1. Create Account')
-    print('2. Deposit Money')
-    print('3. Withdraw Money')
-    print('4. Balance Check')
-    print('5. Exit')
+    print('1.Enter 1 To  Create Account')
+    print('2. Enter 2 To Deposit Money')
+    print('3.Enter 3 To Withdraw Money')
+    print('4.Enter 4 To  Check Balance')
+    print('5.Enter 5 To  Exit ')
 
     c = input('Enter your Option : ')
     if c == '1':
