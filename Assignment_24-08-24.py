@@ -17,7 +17,7 @@ class Cart:
     def total(self):
         return sum(self.items.values())
     
-cart = Cart()
+c = Cart()
 while True:
     print('Choose the Options Below ')
     print('--------------------------------')
@@ -26,18 +26,18 @@ while True:
     print('3. total price')
     print('4. Exit')
 
-    c = input('Enter your Choice : ')
-    if c == '1':
+    o = input('Enter your Choice : ')
+    if o == '1':
         name = input('Enter item name: ')
         price = float(input('Enter item price: '))
-        cart.add(name,price)
-    elif c == '2':
-        print(cart.items)
+        c.add(name,price)
+    elif o == '2':
+        print(c.items)
         name = input('Enter item name to remove: ')
-        cart.remove(name)
-    elif c == '3':
-        print('Total price:',cart.total())
-    elif c == '4':
+        c.remove(name)
+    elif o == '3':
+        print('Total price:',c.total())
+    elif o == '4':
         break
     else:
         print('Enter Proper Option')
