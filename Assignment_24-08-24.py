@@ -6,44 +6,38 @@ Include methods for adding and removing items, and calculating the total price.
 class Cart:
     def __init__(self):
         self.items = {}
-
     def add(self,name,price):
         if name in self.items:
             self.items[name] =self.items[name] + price
         else:
             self.items[name] = price
-
     def remove(self,name):
         if name in self.items:
             del self.items[name]
-
     def total(self):
         return sum(self.items.values())
-
+    
 cart = Cart()
 while True:
     print('Choose the Options Below ')
     print('--------------------------------')
     print('1. Add item')
     print('2. Remove item')
-    print('3. Show total price')
+    print('3. total price')
     print('4. Exit')
-    choice = input('Enter your Choice : ')
-    
-    if choice == '1':
+
+    c = input('Enter your Choice : ')
+    if c == '1':
         name = input('Enter item name: ')
         price = float(input('Enter item price: '))
         cart.add(name,price)
-
-    elif choice == '2':
+    elif c == '2':
         print(cart.items)
         name = input('Enter item name to remove: ')
         cart.remove(name)
-
-    elif choice == '3':
+    elif c == '3':
         print('Total price:',cart.total())
-
-    elif choice == '4':
+    elif c == '4':
         break
     else:
         print('Enter Proper Option')
