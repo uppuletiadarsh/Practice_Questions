@@ -1,5 +1,6 @@
-# public attributes and method
+# Encapsulation
 
+# public attributes and method
 class Encap:
     def __init__(self,value):
         self.value = value
@@ -10,7 +11,6 @@ print(e.value)
 e.m1()
     
 # protected attributes and method
-
 class Encap1:
     def __init__(self,value):
         self._value = value
@@ -20,8 +20,8 @@ e = Encap1(1600)
 print(e._value)
 e.m1()
 
-# private attributes and method
 
+# private attributes and method
 class Encap2:
     def __init__(self, value):
         self.__value = value
@@ -29,6 +29,7 @@ class Encap2:
     def m1(self):
         print(self.__value)
 e = Encap2(99)
+
 #print(e.__value) # not accesseble outside of the class
 e.m1()
 
@@ -64,6 +65,8 @@ r = Priv(987)
 r.m1()  
 #print(r.__z)
 #---------------------------------------
+
+
 class Pub:
     def __init__(self,name,id):
         self.name = name
@@ -73,25 +76,29 @@ class Pub:
 
 class Prot:
     def __init__(self,company,salary): 
-        self.company = company
-        self.salary = salary
+        self._company = company
+        self._salary = salary
     def m1(self):
-        print(self.company,self.salary)
+        print(self._company,self._salary)
 
 class Priv:
     def __init__(self,phone,pricee): 
-        self.phone = phone
-        self.pricee = pricee
+        self.__phone = phone
+        self.__pricee = pricee
     def m1(self):
-        print(self.phone,self.pricee)
+        print(self.__phone,self.__pricee)
 
 p = Pub('Adarsh',169)
 p.m1()
+print(p.name)
+print(p.id)
 
 q = Prot('Wipro',100000)
 q.m1()  
-
-
+print(q._company)
+print(q._salary)
 r = Priv('Mi Note 10 S',18000)
 r.m1()  
-#print(r.__z)
+#print(r.__phone)
+#print(r.__pricee)
+
