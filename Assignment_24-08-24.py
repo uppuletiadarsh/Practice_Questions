@@ -26,7 +26,7 @@ while True:
     print('3. total price')
     print('4. Exit')
 
-    o = input('Enter your Choice : ')
+    o = input('Enter your option : ')
     if o == '1':
         name = input('Enter item name: ')
         price = float(input('Enter item price: '))
@@ -40,7 +40,7 @@ while True:
     elif o == '4':
         break
     else:
-        print('Enter Proper Option')
+        print('Enter Proper Options')
 
 #------------------------------------------------------------------------------------------------------------
 '''
